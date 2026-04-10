@@ -128,6 +128,7 @@ def _load_single_dataset(
     elif dataset_attr.load_from == "cloud_file":
         dataset = Dataset.from_list(read_cloud_json(data_path), split=dataset_attr.split)
     else:
+        # 从huggingface hub加载数据集
         dataset = load_dataset(
             path=data_path,
             name=data_name,

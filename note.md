@@ -1,3 +1,4 @@
+# Llama-Factory源代码解读
 CLI 命令 `llamafactory-cli` 被 pip 安装成了一个可执行脚本，这个脚本最终调用 src/llamafactory/launcher.py 里的 Python 代码。流程可以简化为：
 
 你在项目根目录执行
