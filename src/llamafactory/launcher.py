@@ -153,7 +153,7 @@ def launch():
 
     elif command == "train":
         from .train.tuner import run_exp
-
+        # 如果是启动训练命令的话，就是调用run_exp()
         run_exp()
 
     elif command == "webchat":
